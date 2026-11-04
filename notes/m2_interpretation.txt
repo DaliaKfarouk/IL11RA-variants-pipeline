@@ -1,0 +1,38 @@
+﻿# Module 2 interpretation: where the variants fall in the receptor
+
+Written from `results/m2_position_table.csv`, `results/m2_domain_counts.csv` and `figures/m2_lollipop_IL11RA.png`. Residue numbers follow UniProt Q14626 (422 amino acids). Domain boundaries were copied by hand from UniProt.
+
+## What the map shows
+
+29 of the 31 variants have a protein position. The two splice variants with no protein name ("p.?") are not on the map. The plot has 28 points, because p.Leu236Pro comes from two independent families. It is the only position with a count above one.
+
+| Feature | Residues | Variants | Families |
+|---|---|---|---|---|
+| Signal peptide | 1 to 22 | 1 | 1 
+| Ig-like D1 | 27 to 110 | 3 | 3 
+| FNIII D2 | 112 to 219 | 6 | 5 | 
+| FNIII D3 | 220 to 317 | 18 | 16 | 
+| WSXWS motif | 304 to 308 | 2 | 2 
+
+The WSXWS motif lies inside D3, so its two variants are counted twice in this table. One variant (p.Glu364_Val368del, residue 364) lies after the last listed feature.
+
+The variants are not spread evenly. 18 of the 29 mapped variants (62%) are in D3, which covers 98 of 422 residues (23%). The D3 region around residues 220 to 310 holds most of the missense variants. The two variants in the WSXWS motif are an in-frame duplication (p.Thr306_Ser308dup) and p.Trp307Arg.
+
+
+
+## Functional evidence
+
+The review's free text was sorted by keywords. Four variants fall in "reduced signalling" (residues 15, 200, 221, 296). Four fall in "impaired trafficking" (292, 306, 307, 364). 20 fall in "other", which is a catch-all and does not mean "no evidence". All four trafficking variants are at residue 292 or beyond. With four variants per class I draw no conclusion from this.
+
+
+
+## What a one-dimensional map cannot show
+
+- Three-dimensional closeness, whether a residue is buried or on the surface, and interface residues.
+- Whether D3 is special or whether it is simply where people looked and found variants. I have no population background track, so I cannot compare with variation in unaffected people.
+- A cluster is not proof of mechanism.
+
+## Open points
+
+VAR11 is plotted at residue 226, but it is probably the same variant as VAR26 at residue 225 (issue O2). The map will change if the review sheet is corrected. I ran no statistical tests on the counts per domain.
+

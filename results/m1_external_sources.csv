@@ -1,0 +1,4 @@
+resource,file,md5,file_date
+gnomad,gnomAD_v4.1.2_ENSG00000137070_2026_10_31_00_04_08.csv,40eb883dc35d727c6f8eb6b694247e00,2026-10-30
+clinvar,clinvar_download_20261030_190419.tsv,2f1e733d619e059c62b115939add3ca5,2026-10-30
+alphamissense,AlphaMissense-Search-Q14626 (1).zip,1edac4f2a40861f46392766b4226cb2b,2026-10-30

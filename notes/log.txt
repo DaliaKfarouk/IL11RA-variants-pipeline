@@ -1,0 +1,24 @@
+﻿
+This log started in the same day as the scripted pipeline. Earlier work on the systematic review is recorded in the review's own files.
+
+
+**Done**
+- Ran `R/00_setup.R` to `R/05_protein_map.R` in R 4.6.1. All six scripts finished without error after I fixed one mistake: I had pasted the code of script 01 into the file named `00_setup.R`, so it called itself.
+- Froze the inputs. Checksums are in `results/m1_input_freeze.csv`.
+- Wrote the analysis plan, data dictionary, deviations log, README, and the interpretation notes for Modules 1 and 2.
+
+**Results**
+- 31 IL11RA rows. 21 of 25 predicted variants match the published protein name (84.0%).
+- Filters: F1 31/31, F2 19/31 (61.3%), F3 31/31.
+- 29 variants have a protein position. 18 of them are in domain D3.
+
+**Problems found** (details in `docs/deviations_log.md`)
+- VAR31: the coordinates look wrong for a duplication.
+- VAR11 and VAR26 share one genomic position.
+- VAR21 is labelled nonsense but its protein name is a missense change.
+- VAR10 and VAR27 differ from the prediction. Isoform choice is a likely cause.
+
+**Next**
+- Check VAR11, VAR21 and VAR31 against the source papers. Correct the SR sheet. Make a new freeze. Re-run.
+- Get coordinates for the three in-frame indels.
+

@@ -1,0 +1,52 @@
+﻿# Module 1 interpretation: variant validation and detectability
+
+Written from the files in `results/`. The numbers will change when the open issues in `docs/deviations_log.md` are fixed and the pipeline is re-run.
+
+## Q1a. Does an independent workflow reproduce the published protein change?
+
+Of the 31 IL11RA rows, 25 could be predicted from their genomic position. 21 of the 25 (84.0%) gave the same protein change as the systematic review. Two splice variants have no coding change to predict. Four variants are not single-letter changes with a usable position, so they were not predicted.
+
+Four variants did not match: VAR10, VAR11, VAR27 and VAR31. In all four, the systematic review and VariantValidator agree with each other. The difference comes from the prediction. I have not resolved any of them yet.
+
+- **VAR31** (c.98dup). The coordinates in my coordinate file look wrong for a duplication, so the pipeline predicted a harmless change. This is a data entry problem, and the check caught it.
+- **VAR11**. It shares its genomic position with VAR26 and did not validate. The amino acid at the published position 226 is not arginine. It is probably the same variant as VAR26 with a different numbering.
+- **VAR10 and VAR27.** The predicted names differ (p.Arg296Ter against p.Arg292Ter, and p.Arg235His against p.Arg235Gln). Many transcripts overlap each variant and disagree, so the choice of transcript is a likely cause. I have not verified this.
+
+For the reference amino acid, 28 of the 29 rows with a protein name match UniProt Q14626. The exception is VAR11.
+
+I read the 84% as the result of this workflow with the current inputs. It is not the final error rate of the review.
+
+## Q1b. What would a standard filter miss?
+
+| Filter | Passed | Sensitivity | 95% CI |
+|---|---|---|---|
+| F1, permissive | 31 of 31 | 100% | 88.8% to 100% |
+| F2, standard | 19 of 31 | 61.3% | 42.2% to 78.2% |
+| F3, inclusive | 31 of 31 | 100% | 88.8% to 100% |
+
+F1 and F3 pass everything because every variant is rare. Among the 16 variants found in gnomAD, the highest frequency is 8.1 in 100,000 (p.Gln159Ter), and no variant has a homozygote. Fifteen variants have no frequency and pass by my rule that absence counts as rare. So the frequency cut-off removes nothing here.
+
+F2 misses 12 variants. None fail on frequency. All fail on variant class or score:
+
+- 8 missense variants that AlphaMissense calls "ambiguous" (VAR02, VAR12, VAR16, VAR23) or "likely benign" (VAR11, VAR22, VAR26, VAR27). VAR11 and VAR26 are probably one variant counted twice.
+- 3 in-frame deletions or duplications (VAR05, VAR17, VAR20).
+- 1 splice-region variant (VAR06).
+
+In this small set, a standard filter built on loss-of-function categories and a predictor misses the non-canonical variants. I state this as an observation about 31 variants, not as a rule.
+
+## Q1c. Do the sources agree?
+
+12 variants are in ClinVar: 5 pathogenic, 4 likely pathogenic, 1 pathogenic or likely pathogenic, 1 with conflicting reports, and 1 of uncertain significance. Seven ClinVar pathogenic or likely pathogenic variants also have an AlphaMissense class. Six of them are "likely pathogenic". One is "ambiguous". The conflicting and uncertain variants are "ambiguous" in AlphaMissense. I describe these differences and do not try to resolve them.
+
+## What this does not show
+
+- The sample is small and biased towards striking cases. It comes from published reports only.
+- AlphaMissense, ClinVar and gnomAD are supporting evidence. A low score does not make a published variant benign.
+- Absence from gnomAD does not prove that a variant is pathogenic. Three variants could not be looked up at all.
+- I reproduced published information. I did not validate it independently.
+- VAR21 is labelled nonsense in the review, but its protein name is a missense change. If it is a missense variant, F2 would depend on its AlphaMissense class.
+
+## Next steps
+
+I will check VAR11, VAR21 and VAR31 against their papers. Correct the review sheet. Get coordinates for the three in-frame variants. Re-run and update the numbers here.
+

@@ -1,0 +1,13 @@
+variant_id,hgvs_c,hgvs_p,var_class,gnomad_af,am_class,why_F1,why_F2,why_F3
+VAR02,c.886C>T,p.Arg296Trp,missense,NA,ambiguous,pass,variant class / score,pass
+VAR05,c.916_924dup,p.Thr306_Ser308dup,inframe_indel,NA,NA,pass,variant class / score,pass
+VAR06,c.479+6A>G,p.?,splice_region,NA,NA,pass,variant class / score,pass
+VAR11,c.676C>T,p.Arg226Trp,missense,1.6107748446531568e-5,likely_benign,pass,variant class / score,pass
+VAR12,c.781C>T,p.Arg261Cys,missense,NA,ambiguous,pass,variant class / score,pass
+VAR16,c.347C>T,p.Pro116Leu,missense,6.195694735642097e-7,ambiguous,pass,variant class / score,pass
+VAR17,c.43_66del,p.Val15_Ala22del,inframe_indel,NA,NA,pass,variant class / score,pass
+VAR20,c.1090_1104del,p.Glu364_Val368del,inframe_indel,NA,NA,pass,variant class / score,pass
+VAR22,c.377A>G,p.Glu126Gly,missense,1.3011071802529105e-5,likely_benign,pass,variant class / score,pass
+VAR23,c.692G>T,p.Gly231Val,missense,NA,ambiguous,pass,variant class / score,pass
+VAR26,c.673C>T,p.Arg225Trp,missense,1.6107748446531568e-5,likely_benign,pass,variant class / score,pass
+VAR27,c.704G>A,p.Arg235Gln,missense,6.195878996961541e-6,likely_benign,pass,variant class / score,pass

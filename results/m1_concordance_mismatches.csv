@@ -1,0 +1,5 @@
+variant_id,hgvs_c,hgvs_p,mane_hgvs_p,predicted_hgvs_p,predicted_tx,n_tx,isoforms_agree
+VAR10,c.874C>T,p.Arg292Ter,p.Arg292Ter,p.Arg296Ter,ENST00000555003.6,9,FALSE
+VAR11,c.676C>T,p.Arg226Trp,p.Arg226Trp,p.Arg225Trp,ENST00000555003.6,9,FALSE
+VAR27,c.704G>A,p.Arg235Gln,p.Arg235Gln,p.Arg235His,ENST00000555003.6,9,FALSE
+VAR31,c.98dup,p.Gly34ArgfsTer39,p.Gly34ArgfsTer39,p.Pro33=,ENST00000555003.6,15,FALSE

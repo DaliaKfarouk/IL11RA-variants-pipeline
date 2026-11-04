@@ -1,0 +1,7 @@
+var_class,n,F1,F2,F3
+canonical_splice,1,1,1,1
+frameshift,2,2,2,2
+inframe_indel,3,3,0,3
+missense,19,19,11,19
+nonsense,5,5,5,5
+splice_region,1,1,0,1

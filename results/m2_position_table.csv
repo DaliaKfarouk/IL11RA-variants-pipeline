@@ -1,0 +1,29 @@
+prot_pos_published,var_class,func_class,n_families,any_low_quality,label
+15,inframe_indel,reduced signalling,1,FALSE,p.Val15_Ala22del
+34,frameshift,other,1,FALSE,p.Gly34ArgfsTer39
+94,missense,other,1,FALSE,p.Cys94Phe
+110,missense,other,1,FALSE,p.Gly110Cys
+116,missense,other,1,FALSE,p.Pro116Leu
+126,missense,other,1,FALSE,p.Glu126Gly
+132,nonsense,other,1,FALSE,p.Trp132Ter
+159,nonsense,other,1,FALSE,p.Gln159Ter
+200,missense,reduced signalling,1,FALSE,p.Pro200Thr
+218,nonsense,other,1,FALSE,p.Pro218Ser
+221,missense,reduced signalling,1,FALSE,p.Pro221Arg
+225,missense,other,1,FALSE,p.Arg225Trp
+226,missense,other,1,FALSE,p.Arg226Trp
+231,missense,other,1,FALSE,p.Gly231Val
+232,nonsense,other,1,FALSE,p.Tyr232Ter
+235,missense,other,1,FALSE,p.Arg235Gln
+236,missense,other,2,FALSE,p.Leu236Pro
+237,missense,other,1,FALSE,p.Arg237Pro
+243,missense,other,1,FALSE,p.Pro243Arg
+245,missense,other,1,FALSE,p.Ser245Cys
+261,frameshift,other,1,FALSE,p.Arg261ValfsTer19
+261,missense,other,1,FALSE,p.Arg261Cys
+289,missense,other,1,FALSE,p.His289Arg
+292,nonsense,impaired trafficking,1,FALSE,p.Arg292Ter
+296,missense,reduced signalling,1,FALSE,p.Arg296Trp
+306,inframe_indel,impaired trafficking,1,FALSE,p.Thr306_Ser308dup
+307,missense,impaired trafficking,1,FALSE,p.Trp307Arg
+364,inframe_indel,impaired trafficking,1,FALSE,p.Glu364_Val368del

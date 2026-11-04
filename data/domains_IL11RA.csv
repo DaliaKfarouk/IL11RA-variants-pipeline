@@ -1,0 +1,6 @@
+feature,start,end,source,date_checked
+signal_peptide,1,22,UniProt Q14626,4/10/2026
+Ig-like_D1,27,110,UniProt Q14626,4/10/2026
+FNIII_D2,112,219,UniProt Q14626,4/10/2026
+FNIII_D3,220,317,UniProt Q14626,4/10/2026
+WSXWS_motif,304,308,UniProt Q14626,4/10/2026

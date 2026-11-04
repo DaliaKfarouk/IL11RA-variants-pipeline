@@ -1,0 +1,13 @@
+clinvar_class,am_class,n
+Conflicting classifications of pathogenicity,ambiguous,1
+Likely pathogenic,likely_pathogenic,3
+Likely pathogenic,NA,1
+Pathogenic,ambiguous,1
+Pathogenic,likely_pathogenic,2
+Pathogenic,NA,2
+Pathogenic/Likely pathogenic,likely_pathogenic,1
+Uncertain significance,ambiguous,1
+NA,ambiguous,1
+NA,likely_benign,4
+NA,likely_pathogenic,5
+NA,NA,9
