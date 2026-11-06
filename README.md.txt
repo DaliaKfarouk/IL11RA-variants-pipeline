@@ -15,7 +15,7 @@ It generates no new patient data. All inputs are published or public. The aim is
 | Q1 | Does an independent annotation workflow reproduce the published protein change of each variant? Which published disease variants would a standard "rare, protein-altering, high-score" filter pass or miss? How do the papers, ClinVar, gnomAD and AlphaMissense agree? | 1 |
 | Q2 | Where do the variants fall in the receptor (signal peptide, domains, WSXWS motif)? | 2 |
 
-Modules 3 (public RNA-seq of IL11 induction and tissue expression) and 4 (druggability and target-safety evidence) are described in the project plan and are not part of this release.
+Modules 3 (public RNA-seq of IL11 induction and tissue expression) and 4 (druggability and target-safety evidence) are intended to be finished by the end of December and added here 
 
 ## Main results so far
 
@@ -79,7 +79,7 @@ Every file has its checksum in `results/m1_external_sources.csv`. Raw downloads 
 
 ## Relationship to the systematic review
 
-The systematic review is registered on OSF [OSF registration link]. This repository takes the frozen variant table as input and sends corrections back to the review. It never edits the review's columns. Variant classes follow the review protocol.
+The systematic review is registered on OSF. This repository takes the frozen variant table as input and sends corrections back to the review. It never edits the review's columns. Variant classes follow the review protocol.
 
 ## AI assistance
 
