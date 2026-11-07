@@ -60,7 +60,7 @@ Package versions are locked in `renv.lock`.
 | Systematic-review variant table | frozen 2026-11-04 | checksum in `results/m1_input_freeze.csv` |
 | VariantValidator | | GRCh38 coordinates, MANE names |
 | ClinVar | downloaded 2026-10-30 | table download |
-| gnomAD | v4.1.2 as written in the export file name [confirm on the gnomAD site]; exported 2026-10-31 | genome build GRCh38 |
+| gnomAD | v4.1.2 as written in the export file name; exported 2026-10-31 | genome build GRCh38 |
 | AlphaMissense | search export for Q14626, file dated 2026-10-30 | licence to be checked before sharing the raw file |
 | UniProt Q14626 | | 422 amino acids |
 | Transcript models | `TxDb.Hsapiens.UCSC.hg38.knownGene` | see `renv.lock` for the version |
